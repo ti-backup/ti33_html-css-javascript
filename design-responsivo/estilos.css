@@ -34,6 +34,7 @@
   }
   
   main + aside {
+    display: none;
     background-color: #33b5e5;
     padding: 15px;
     color: #ffffff;
@@ -42,7 +43,7 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
-  .footer {
+  footer {
     background-color: #0099cc;
     color: #ffffff;
     text-align: center;
@@ -54,3 +55,42 @@
     width: 100%;
     padding: 15px;
   }
+
+@media only screen and (min-width:450px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main + aside{
+        display: block;
+    }
+    
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+
+@media only screen and (min-width:768px){
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+}
