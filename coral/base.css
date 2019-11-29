@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body{ margin: 0px; }
+
+header{
+	/*background:url(img/coral-logo.png) orange no-repeat 10px 10px;*/
+	background-image: url(img/coral-logo.png);
+	background-color: orange;
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 10px;
+}
+header p{
+	width: 100%;
+	text-align: right;
+	margin: 0px;
+}
+
+#slideshow{
+	background-color: #ccc;
+}
+
+#slideshow #capa-slideshow{
+	width: 100%;
+}
+
+#opcoes-slideshow{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 2px;
+	margin: 0px;
+}
+
+#opcoes-slideshow li{
+	margin: 0.2em 0.5em 0.2em 0.5em;
+	width: 10px;
+}
+
+#opcoes-slideshow li img{
+	width: 100%;
+}
+
+#posts{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#posts a{
+	width: 100%;
+	text-align: center;
+	background-color: orange;
+	padding: 5px;
+	margin: 10px 10px;
+}
+
+#posts a:first-child{
+	margin-top: 0px;
+}
+
+#posts a img {
+	width: 100%;
+}
+

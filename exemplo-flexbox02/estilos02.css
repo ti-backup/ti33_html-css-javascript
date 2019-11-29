@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#principal{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header,
+footer { width: 100%; }
+nav { width: 20%; }
+main { width: 100%; }

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+img[src$="menu.png"] { display: none; }
+
+nav { display: block; }
+
+main { width: 60%; }
+aside {
+	display: block;
+	background-color: black;
+	width: 20%;
+}

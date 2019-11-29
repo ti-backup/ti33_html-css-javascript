@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+body{ margin: 0px; }
+
+header,
+nav,
+aside,
+main,
+footer{
+	height: 100px;
+	background: green;
+}
+
+nav{ background: blue; }
+main{ background: red; }
+aside{ background: black; }
