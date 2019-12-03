@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>..:: Acessibilidade ::..</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mudaTamanho(){
+            var tamanho = document.getElementById("tamanho").value;
+            var paragrafos = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < paragrafos.length; i++){
+                paragrafos[i].style.fontSize = tamanho;
+            }
+        }
+    </script>
+    <p>
+        <label for="tamanho">Tamanho da fonte: </label>
+        <select id="tamanho" onchange="mudaTamanho()">
+            <option value="8px">8 px</option>
+            <option value="10px">10 px</option>
+            <option value="12px">12 px</option>
+            <option value="14px">14 px</option>
+            <option value="16px">16 px</option>
+            <option value="18px">18 px</option>
+        </select>
+    </p>
+
+    <h1>Anvisa libera venda de produtos à base de cannabis em farmácias</h1>
+    <p>A Agência Nacional de Vigilância Sanitária (Anvisa) aprovou nesta terça-feira (3) a liberação da venda em farmácias no Brasil de produtos à base de cannabis para uso medicinal. A regulamentação foi aprovada por unanimidade e é temporária, com validade de três anos. A norma passa a valer 90 dias após a sua publicação no "Diário Oficial da União".</p>
+    <p>Cannabis sativa é o nome da planta da qual podem ser extraídas substâncias como o canabidiol (CBD) e o tetra-hidrocanabidiol (THC). Também é da Cannabis que se faz a maconha.</p>
+    <p>A regulamentação impede que a cannabis seja manipulada em farmácias de manipulação. A comercialização ocorrerá apenas em farmácias e drogarias sem manipulação, que venderão mediante prescrição médica.</p>
+    <p>A resolução da Anvisa cria uma nova classe de produto sujeito à vigilância sanitária: "produto à base de cannabis". Ou seja, durante os três anos de validade, os produtos ainda não serão classificados como medicamentos.</p>
+</body>
+</html>
