@@ -8,9 +8,10 @@
     <title>..:: Validação de Formulário ::..</title>
 </head>
 <body>
-    <form>
+    <form action="cadastro.php" method="POST" onsubmit="return validacao();">
+        <p>*Campos de preenchimento obrigatório.</p>
         <div>
-            <label for="nome">Nome:</label>
+            <label for="nome">*Nome:</label>
             <input type="text" id="nome" />
         </div>
 
@@ -42,14 +43,15 @@
 
         <fieldset>
             <legend>Áreas de Interesse</legend>
-            <input type="checkbox" id="esporte" name="areas[]" value="esporte" />
+            <input type="checkbox" id="esporte" name="areas[]" value="Esporte" />
             <label for="esporte">Esporte</label>
-            <input type="checkbox" id="musica" name="areas[]" value="musica" />
+            <input type="checkbox" id="musica" name="areas[]" value="Música" />
             <label for="musica">Música</label>
-            <input type="checkbox" id="artes" name="areas[]" value="artes" />
+            <input type="checkbox" id="artes" name="areas[]" value="Artes" />
             <label for="artes">Artes</label>
-            <input type="checkbox" id="tecnologia" name="areas[]" value="tecnologia" />
+            <input type="checkbox" id="tecnologia" name="areas[]" value="Tecnologia" />
             <label for="tecnologia">Tecnologia</label>
+            <button type="button" onclick="VisualizaAreas()">Visualizar áreas selecionadas</button>
         </fieldset>
 
         <div>
