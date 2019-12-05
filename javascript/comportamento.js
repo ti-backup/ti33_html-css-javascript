@@ -62,8 +62,6 @@ function comparaSenhas(){
     var confirma = document.getElementById("confirma").value;
     var erro = document.getElementById("erroSenha");
 
-    alert("ok");
-
     var msgErro = "As senhas não correspondem";
     if (senha != confirma){
         alert(msgErro);
