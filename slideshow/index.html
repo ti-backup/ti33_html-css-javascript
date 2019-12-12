@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="slideshow.js"></script>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
 </head>
@@ -39,14 +40,14 @@
         </ul>
       
         <!-- Next and previous buttons -->
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
 
         <!-- The dots/circles -->
         <div id="navegacao">
-            <button class="dot" onclick="currentSlide(1)"></button>
-            <button class="dot" onclick="currentSlide(2)"></button>
-            <button class="dot" onclick="currentSlide(3)"></button>
+            <button class="dot" value="1"></button>
+            <button class="dot" value="2"></button>
+            <button class="dot" value="3"></button>
         </div>
     </div>
 </body>

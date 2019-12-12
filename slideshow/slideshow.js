@@ -1,28 +1,51 @@
 var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+$(document).ready(function(){
+  showSlides(slideIndex);
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  $(".prev").click(function(){
+    showSlides(--slideIndex);
+  });
+
+  $(".next").click(function(){
+    showSlides(++slideIndex);
+  });
+
+  $(".dot").click(function(){
+    slideIndex = $(this).attr("value");
+    showSlides(slideIndex);
+  });
+});
 
 function showSlides(n) {
+  var contador = $(".mySlides").length;
+
+  if (n > contador) slideIndex = 1;
+  if (n < 1) slideIndex = contador;
+
+  $(".mySlides").each(function(i){
+    if (i == slideIndex - 1) $(this).show();
+    else $(this).hide();
+  });
+
+  $(".dot").each(function(i){
+    if (i == slideIndex - 1) $(this).addClass("active");
+    else $(this).removeClass("active");
+  });
+}
+
+function showSlides_old(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = $(".mySlides");
+  var dots = $(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      $(slides[i]).hide();
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      $(dots[i]).removeClass("active");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  $(slides[slideIndex-1]).show();
+  $(dots[slideIndex-1]).addClass("active");
 }
